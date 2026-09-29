@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <script src="bootstrap5/js/bootstrap.js"></script>
+</head>
+<body>
+    <!-- flexbox container -->
+    <div class="container d-flex align-items-center justify-content-center min-vh-100">
+        <!-- calculator -->
+        <div class="card shadow-lg bg-dark w-25 rounded-5 border border-5 border-secondary">
+            <div class="card-header border-bottom-0"> <!-- calcu text-->
+                <h1 class="text-center fw-bold py-3 text-light">Calculator</h1>
+            </div>
+            <div class="card-body">
+                <textfield class="form-control form-control-lg border border-5 border-secondary text-end fw-bold fs-3 mb-3 readonly" id="display">0</textfield>
+
+                <!-- buttons -->
+                <div class="row g-2"> <!--unang row, c at del-->
+                    <div class="col-6 justify-content-center d-flex mb-2">
+                        <button class="btn btn-danger fw-bold w-100 border border-3 border-light">C</button>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center mb-2">
+                        <button class="btn btn-danger fw-bold w-100 border border-3 border-light">DEL</button>
+                    </div>
+
+                    <div class="col-3 d-flex justify-content-center mb-2"> <!--pangalawang row-->
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">7</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">8</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">9</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-warning text-dark fw-bold w-100 rounded-pill border border-3 border-light">+</button>
+                    </div>
+
+                    <div class="col-3 d-flex justify-content-center mb-2"> <!--pangatlong row-->
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">4</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">5</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">6</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-warning text-dark fw-bold w-100 rounded-pill border border-3 border-light">-</button>
+                    </div>
+
+                    <div class="col-3 d-flex justify-content-center mb-2"> <!--pang apat na row-->
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">1</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">2</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">3</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-warning text-dark fw-bold w-100 rounded-pill border border-3 border-light">*</button>
+                    </div>
+
+                    <div class="col-3 d-flex justify-content-center mb-2"> <!--pang limang row-->
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">.</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-primary text-light fw-bold w-100 rounded-pill border border-3 border-light">0</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-success text-light fw-bold w-100 rounded-pill border border-3 border-light">=</button>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center mb-2">
+                        <button class="btn btn-warning text-dark fw-bold w-100 rounded-pill border border-3 border-light">/</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
